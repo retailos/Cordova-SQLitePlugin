@@ -180,7 +180,8 @@ static void sqlite_regexp(sqlite3_context* context, int argc, sqlite3_value** va
     if (dbFile == NULL) {
         return NULL;
     }
-    NSString *dbPath = [NSString stringWithFormat:@"%@/%@", appDocsPath, dbFile];
+
+    NSString *dbPath = [NSString stringWithFormat:@"%@", dbFile];
     return dbPath;
 }
 
